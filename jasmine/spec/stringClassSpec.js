@@ -10,7 +10,7 @@ describe('String', function() {
     });
     it('should return true if it contains a vowel', function() {
       expect('sleep'.hasVowels()).toBeTruthy();
-      expect(''.hasVowels()).toBeFalsy();
+      expect('dsr'.hasVowels()).toBeFalsy();
     });
 
   });
@@ -22,7 +22,7 @@ describe('String', function() {
     });
     it('should return string converted to Uppercase', function() {
       expect('susan'.toUpper()).toMatch('SUSAN');
-      expect('toUpper'.to()).toMatch('TOUPPER')
+      expect('toUpper'.toUpper()).toMatch('TOUPPER')
     });
 
   });
