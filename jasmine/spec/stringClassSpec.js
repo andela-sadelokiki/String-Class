@@ -1,6 +1,5 @@
 'use strict';
 
-
 describe('String', function() {
 
   describe('hasVowels', function() {
@@ -22,7 +21,7 @@ describe('String', function() {
     });
     it('should return string converted to Uppercase', function() {
       expect('susan'.toUpper()).toMatch('SUSAN');
-      expect('toUpper'.toUpper()).toMatch('TOUPPER')
+      expect('toUpPer'.toUpper()).toMatch('TOUPPER')
     });
 
   });
@@ -36,6 +35,7 @@ describe('String', function() {
       expect('BUILDING'.toLower()).toMatch('building');
       expect('toLower'.toLower()).toMatch('tolower');
     });
+
   });
 
   describe('ucFirst', function() {
@@ -43,7 +43,7 @@ describe('String', function() {
     it('should return typeof String', function() {
       expect('stuff'.ucFirst()).toEqual(jasmine.any(String));
     });
-    it('should changes the First Character of the string to an Upper case.', function() {
+    it('should change the First Character of the string to an Upper case.', function() {
       expect('sleep'.ucFirst()).toMatch('Sleep')
       expect('susan loves food'.ucFirst()).toEqual("Susan Loves Food");
     });
@@ -80,7 +80,9 @@ describe('String', function() {
     });
     it('should return length of words in string', function() {
       expect('respect'.wordCount()).toEqual(1);
+      expect('i love food'.wordCount()).toEqual(3);
     });
+
   });
 
   describe('toCurrency', function() {
